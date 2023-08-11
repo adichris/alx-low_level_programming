@@ -1,7 +1,8 @@
 #include <stdio.h>
 /*
- * A program to print out the size of builtin data type to console
- * By Addai Christopher
+ * main - Entry point
+ *
+ * Return: always 0
  */
 int main(void)
 {
