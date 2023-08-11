@@ -1,5 +1,8 @@
 #include <stdio.h>
-
+/*
+ * A program to print out the size of builtin data type to console
+ * By Addai Christopher
+ */
 int main(void)
 {
 	printf("Size of a char: %d byte(s)\n", sizeof(char));
