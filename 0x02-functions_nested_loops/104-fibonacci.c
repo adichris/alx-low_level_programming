@@ -4,23 +4,29 @@
  *
  * Return: nothing
  */
-int main()
+int main(void)
 {
-    int n = 98;
-    int a = 0, b = 1;
+	int counter = 2;
 
-    printf("%d",b);
+	unsigned long int a = 1;
+	unsigned long int b = a + 1;
+	unsigned long int c = a + b;
 
-    int nextTerm;
-
-    // printing the rest of the terms here
-    for(int i = 2; i < n; i++){
-        nextTerm = a + b;
-        a = b;
-        b = nextTerm;
-
-        printf("%d, ",nextTerm);
-    }
-
-    return 0;
+	printf("%lu, ", a);
+	printf("%lu, ", b);
+	while (counter <= 98)
+	{
+		counter++;
+		printf("%lu", c);
+		a = b;
+		b = c;
+		c = a + b;
+		if (counter < 98)
+		{
+			printf(", ");
+		}
+	}
+	printf("\n");
+	return (0);
 }
+
