@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * git_bit - get the value of a given bit at an index
- * @n: long int number argument to be pass
- * @index: index of the value
+ * get_bit - Gets the value of a bit at a given index.
+ * @n: The unsigned long integer to extract the bit from.
+ * @index: Index of the bit to retrieve (0-based).
  *
- * Return: 1 or 0 of the bit value of the number at index(success)
+ * Return: value of bit at the index
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
